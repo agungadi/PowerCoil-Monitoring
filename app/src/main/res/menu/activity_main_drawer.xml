@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+        <item
+            android:id="@+id/nav_notif"
+            android:icon="@drawable/notification"
+            android:title="Notification"
+            android:clickable="true"
+            />
+
+    <item
+        android:id="@+id/nav_panduan"
+        android:icon="@drawable/book"
+        android:title="Panduan"
+        android:clickable="true"
+        />
+
+    <item
+        android:id="@+id/nav_faq"
+        android:icon="@drawable/faq"
+        android:title="Faq"
+        android:clickable="true"
+        />
+
+
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/signout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

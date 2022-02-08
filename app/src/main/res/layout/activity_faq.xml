@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaqActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_home"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include
+            android:id="@+id/toolbarFaq"
+            layout="@layout/toolbar_faq" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbarFaq"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_notif">
+
+
+            <TextView
+                android:id="@+id/faq1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical"
+                android:text="Apakah PowerCoil itu?"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/faq2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq1"
+                android:layout_marginTop="40dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical"
+                android:text="PowerCoil adalah sebuah aplikasi Android yang berfungsi untuk memantau pembangkit listrik yang berkonsep Energi Baru Terbarukan (EBT)"
+                android:textAlignment="inherit"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/faq3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq2"
+                android:layout_marginTop="100dp"
+                android:paddingTop="5dp"
+                android:scrollbars="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Pembangkit apa saja yang dapat di input pada aplikasi PowerCoil?"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/faq4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq3"
+                android:layout_marginTop="150dp"
+                android:paddingTop="5dp"
+                android:scrollbars="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Pembangkit yang dapat di input adalah pembangkit tenaga surya dan pembangkit tenaga bayu (angin)."
+                android:textSize="15dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/faq5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq4"
+                android:layout_marginTop="195dp"
+                android:paddingTop="5dp"
+                android:scrollbars="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Apa arti warna pada status di tiap titik pembangkit?"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/faq6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq5"
+                android:layout_marginTop="240dp"
+                android:paddingTop="5dp"
+                android:scrollbars="vertical"
+                android:text="Warna status pada tiap titik dapat berbeda beda, warna merah berarti status darurat, warna kuning berarti peringatan, dan warna hijau berarti aman."
+                android:textAlignment="inherit"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="15dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/faq7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq6"
+                android:layout_marginTop="305dp"
+                android:paddingTop="5dp"
+                android:scrollbars="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Apa yang harus diperhatikan sebelum dilakukan proses pemasangan?"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/faq8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq6"
+                android:layout_marginTop="350dp"
+                android:paddingTop="5dp"
+                android:scrollbars="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Yang harus perhatikan sebelum dilakukan proses pemasangan adalah memenuhi persyaratan pada tahap pengkajian dan mendapatkan Surat Perintah Kerja (SPK) dari Konsultan Proyek."
+                android:textSize="15dp"
+                android:textAlignment="inherit"
+                android:textColor="@color/white" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

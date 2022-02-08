@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PanduanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_home"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include
+            android:id="@+id/toolbarPanduan"
+            layout="@layout/toolbar_panduan" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbarPanduan"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_notif">
+
+            <TextView
+                android:id="@+id/faq1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical"
+                android:text="Tahap 1 Pengkajian"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/faq2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq1"
+                android:layout_marginTop="40dp"
+                android:paddingTop="5dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical"
+                android:text="Pada tahap pengkajian konsultan melakukan input data pada aplikasi PowerCoil lalu pekerja proyek akan men-survey tempat yang akan dijadikan pembangkit listrik."
+                android:textAlignment="inherit"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/faq3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq2"
+                android:layout_marginTop="110dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical"
+                android:text="Tahap 2 Surat Perintah Kerja (SPK)"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/faq4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq3"
+                android:layout_marginTop="130dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical"
+                android:text="Pada tahap SPK, setelah proses survey selesai dan proses pengkajian selesai maka Konsultan Proyek akan membuat SPK untuk pekerja lapangan. Konsultan Proyek dapat mengupload SPK pada aplikasi ini, dan pekerja proyek dapat mendownload SPK."
+                android:textAlignment="inherit"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/faq5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq4"
+                android:layout_marginTop="215dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical"
+                android:text="Tahap 3 Pemasangan"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/faq6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq5"
+                android:layout_marginTop="235dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical"
+                android:text="Pada tahap pemasangan pekerja proyek datang ke lokasi yang telah disetujui dengan membawa SPK. Pada proses pemasangan pekerja proyek diharuskan mengisi data data yang ada pada tahap pemasangan di aplikasi ini."
+                android:textAlignment="inherit"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/faq7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq6"
+                android:layout_marginTop="305dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical"
+                android:text="Tahap 4 Operasi"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/faq8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faq6"
+                android:layout_marginTop="330dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical"
+                android:text="Pada tahap Operasi berisi status tiap titik pembangkit, terdapat alert pada setiap warna, merah = darurat, kuning = peringatan, hijau = aman."
+                android:textAlignment="inherit"
+                android:textColor="@color/white" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

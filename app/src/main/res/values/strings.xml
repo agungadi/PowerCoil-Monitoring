@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Power Coil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+
+    <string name="drowdown_roles">Roles</string>
+    <string-array name="roles_array">
+        <item>Pilih Roles</item>
+        <item>Admin</item>
+        <item>Operator</item>
+        <item>Konsultan</item>
+        <item>Pekerja Lapangan</item>
+    </string-array>
+</resources>

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@drawable/gradient_home"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        map:mapType="normal" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/ivDetailHotel"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentStart="true"
+                                android:background="@color/utamacolor"
+                                android:padding="10dp"
+                                android:src="@drawable/electricity"
+                                />
+                            <TextView
+                                android:id="@+id/textNama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/ivDetailHotel"
+                                android:text="Nama"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/simbolnama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="40dp"
+                                android:text=":"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@id/textNama"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/tvNama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@id/simbolnama"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/ivAddressHotel"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentStart="true"
+                                android:background="@color/utamacolor"
+                                android:padding="10dp"
+                                android:src="@drawable/kapasitas"
+                                />
+                            <TextView
+                                android:id="@+id/textKapasitas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:text="Kapasitas"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/ivAddressHotel"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/simbolKapasitas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="13dp"
+                                android:text=":"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@id/textKapasitas"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/tvKapasitas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/simbolKapasitas"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/tvSatuanKapasitas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="5dp"
+                                android:text="MW"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/tvKapasitas"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/ivIsi"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentStart="true"
+                                android:background="@color/utamacolor"
+                                android:padding="10dp"
+                                android:src="@drawable/terisi"
+                                />
+                            <TextView
+                                android:id="@+id/textTerisi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:text="Terisi"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/ivIsi"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/simbolTerisi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="47dp"
+                                android:text=":"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@id/textTerisi"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/tvTerisi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/simbolTerisi"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/tvSatuanTerisi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="5dp"
+                                android:text="MW"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/tvTerisi"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/ivArus"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentStart="true"
+                                android:background="@color/utamacolor"
+                                android:padding="10dp"
+                                android:src="@drawable/arus"
+                                />
+                            <TextView
+                                android:id="@+id/textArus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:text="Arus DC"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/ivArus"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/simbolArus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="26dp"
+                                android:text=":"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@id/textArus"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/tvArus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/simbolArus"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/tvSatuanArus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="5dp"
+                                android:text="V"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/tvArus"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/ivTenaga"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentStart="true"
+                                android:background="@color/utamacolor"
+                                android:padding="10dp"
+                                android:src="@drawable/energy" />
+
+                            <TextView
+                                android:id="@+id/textTenaga"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Radiasi"
+                                android:textStyle="bold"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/ivTenaga"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/simbolTenaga"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="33dp"
+                                android:text=":"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@id/textTenaga"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/tvTenaga"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/simbolTenaga"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/tvSatuan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="5dp"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/tvTenaga"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/ivDeskripsi"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentStart="true"
+                                android:background="@color/utamacolor"
+                                android:padding="10dp"
+                                android:src="@drawable/tower" />
+
+                            <TextView
+                                android:id="@+id/textDeskripsi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Deskripsi"
+                                android:textStyle="bold"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/ivDeskripsi"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/simbolDeskripsi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="18dp"
+                                android:text=":"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@id/textDeskripsi"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/tvDeskripsi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="20dp"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/simbolDeskripsi"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:id="@+id/ivJumlah"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentStart="true"
+                                android:background="@color/utamacolor"
+                                android:padding="10dp"
+                                android:src="@drawable/number" />
+
+                            <TextView
+                                android:id="@+id/textJumlah"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Jumlah"
+                                android:textStyle="bold"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/ivJumlah"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/simbolJumlah"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="33dp"
+                                android:text=":"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@id/textJumlah"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/tvJumlah"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="20dp"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/simbolJumlah"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/tvSatuanJml"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="5dp"
+                                android:textStyle="bold"
+                                android:layout_toEndOf="@+id/tvJumlah"
+                                android:textSize="16sp" />
+                            <TextView
+                                android:id="@+id/tvId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="5dp"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                android:layout_toEndOf="@+id/tvSatuanJml"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                         <View
+                             android:id="@+id/view"
+                             android:layout_width="60dp"
+                             android:layout_height="100dp"/>
+                        <ImageView
+                            android:layout_width="260dp"
+                            android:layout_height="120dp"
+                            android:id="@+id/lvl1"
+                            android:src="@drawable/levelsatu"
+                            android:layout_toEndOf="@+id/view"
+                            android:visibility="invisible"/>
+                            <ImageView
+                                android:layout_width="260dp"
+                                android:layout_height="120dp"
+                                android:id="@+id/lvl2"
+                                android:src="@drawable/leveldua"
+                                android:layout_toEndOf="@+id/view"
+                                android:visibility="invisible"/>
+                            <ImageView
+                                android:layout_width="260dp"
+                                android:layout_height="120dp"
+                                android:id="@+id/lvl3"
+                                android:src="@drawable/leveltiga"
+                                android:layout_toEndOf="@+id/view"
+                                android:visibility="invisible"/>
+                            <ImageView
+                                android:layout_width="260dp"
+                                android:layout_height="120dp"
+                                android:id="@+id/lvl4"
+                                android:src="@drawable/levelempat"
+                                android:layout_toEndOf="@+id/view"
+                                android:visibility="invisible"/>
+
+                        </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <Button
+                            android:id="@+id/btn_edit"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Edit"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

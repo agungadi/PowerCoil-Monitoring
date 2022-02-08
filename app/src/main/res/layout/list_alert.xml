@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlalert"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+ 
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/square"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:lottie_autoPlay="true"
+        android:visibility="invisible"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/alert" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/square1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:lottie_autoPlay="true"
+        android:visibility="invisible"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/done" />
+
+
+    <TextView
+        android:id="@+id/namaAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/square"
+        android:layout_toEndOf="@id/square"
+        android:alpha="1.5"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:background="@color/fake_paragraphs"/>
+
+    <TextView
+        android:id="@+id/alert"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:text="Alert:"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="1dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_below="@id/namaAlert"
+        android:layout_toEndOf="@id/square"
+        android:layout_toRightOf="@id/square"/>
+
+
+    <TextView
+        android:id="@+id/ketAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namaAlert"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/alert"
+        android:layout_toEndOf="@id/alert"
+        android:alpha="1.5"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:background="@color/fake_paragraphs"/>
+
+    <TextView
+        android:id="@+id/spaceKap"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ketAlert"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/square"
+        android:layout_toEndOf="@id/square"
+        android:alpha="1.5"
+        android:textStyle="bold"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/ketKapasitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ketAlert"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/spaceKap"
+        android:layout_toEndOf="@id/spaceKap"
+        android:alpha="1.5"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:background="@color/fake_paragraphs"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/ketKapasitas"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/register_bk_color"
+        android:background="@color/recycler_background" />
+
+</RelativeLayout>

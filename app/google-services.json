@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "776915506409",
+    "project_id": "powercoil-62d7a",
+    "storage_bucket": "powercoil-62d7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776915506409:android:0ea60a7d1de56958a0cc78",
+        "android_client_info": {
+          "package_name": "org.uts.powercoil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776915506409-5u1at3j1hfr8f0rpl9cgil2otf8kh847.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.uts.powercoil",
+            "certificate_hash": "fed274d6231d8148f6ba623ba7a6fd221cdf5cb0"
+          }
+        },
+        {
+          "client_id": "776915506409-vfe9edrhgo2hvntjppvp496u0i6uf71u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjN4ogQNTXPMw2uGuOTMaguEM093gtmlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776915506409-vfe9edrhgo2hvntjppvp496u0i6uf71u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
